@@ -1,0 +1,45 @@
+import funkin.play.event.SongEvent;
+import funkin.play.PlayState;
+
+class FlashCamera extends SongEvent {
+    function new() {
+        super('Flash Camera');
+    }
+
+    override function handleEvent(data) {
+        if (PlayState.instance == null || PlayState.instance.currentStage == null) return;
+        if (PlayState.instance.isMinimalMode) return;
+
+        var game = PlayState.instance;
+
+     
+        var v1 = 1.0;
+        if (data != null && data.value != null && data.value.value1 != null) {
+            v1 = Std.parseFloat(data.value.value1);
+        }
+
+       
+        game.camHUD.flash(0xFFFFFF, v1);
+    }
+
+    override function getEventSchema() {
+        return [
+            {
+                name: "value1",
+                title: "Intensity",
+                defaultValue: "1",
+                type: "string"
+            },
+            {
+                name: "value2",
+                title: "Unused",
+                defaultValue: "",
+                type: "string"
+            }
+        ];
+    }
+
+    override function getTitle() {
+        return "Flash Camera";
+    }
+}

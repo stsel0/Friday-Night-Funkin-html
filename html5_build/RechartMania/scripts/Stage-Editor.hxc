@@ -1,0 +1,50 @@
+import funkin.modding.module.Module;
+import funkin.modding.events.StateChangeScriptEvent;
+import flixel.FlxG;
+import funkin.ui.options.OptionsState;
+import funkin.ui.debug.stageeditor.StageEditorState;
+
+class StageEditorOption extends Module {
+    function new() {
+        super("StageEditorOption");
+    }
+
+    public function onStateChangeEnd(event:StateChangeScriptEvent):Void {
+        if (Std.isOfType(event.targetState, OptionsState)) {
+            var preferences = event.targetState.optionsCodex.pages.get("preferences");
+
+            if (preferences != null) {
+                // ✅ Real Stage Editor option
+                preferences.createPrefItemCheckbox(
+                    'Open Stage Editor',
+                    'Opens the stage editor to create and edit stages.',
+                    function(value:Bool):Void {
+                        if (value) {
+                            FlxG.save.data.returnToPreferences = true;
+                            FlxG.save.flush();
+                            FlxG.switchState(() -> new StageEditorState());
+                        }
+                    },
+                    false
+                );
+            }
+        }
+
+        // Handle returning to preferences
+        if (FlxG.save.data.returnToPreferences == true) {
+            FlxG.save.data.returnToPreferences = false;
+            FlxG.save.flush();
+
+            try {
+                if (Std.isOfType(FlxG.state, OptionsState)) {
+                    var optionsState:OptionsState = cast(FlxG.state, OptionsState);
+                    if (optionsState.optionsCodex != null) {
+                        optionsState.optionsCodex.setPage("preferences");
+                    }
+                }
+            } catch (e:Dynamic) {
+                // Ignore errors, just like my dad
+            }
+        }
+    }
+}

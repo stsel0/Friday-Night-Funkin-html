@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TextureAtlas imagePath="Senko San.png">
+	<!-- Created with Adobe Animate version 19.2.1.408 -->
+	<!-- http://www.adobe.com/products/animate.html -->
+	<SubTexture name="Senko Down0000" x="0" y="0" width="584" height="783" frameX="-20" frameY="-16" frameWidth="626" frameHeight="814"/>
+	<SubTexture name="Senko Down0001" x="0" y="0" width="584" height="783" frameX="-20" frameY="-16" frameWidth="626" frameHeight="814"/>
+	<SubTexture name="Senko Down0002" x="584" y="0" width="613" height="804" frameX="-6" frameY="-5" frameWidth="626" frameHeight="814"/>
+	<SubTexture name="Senko Down0003" x="584" y="0" width="613" height="804" frameX="-6" frameY="-5" frameWidth="626" frameHeight="814"/>
+	<SubTexture name="Senko Down0004" x="1197" y="0" width="626" height="814"/>
+	<SubTexture name="Senko Down0005" x="1197" y="0" width="626" height="814"/>
+	<SubTexture name="Senko Down Miss0000" x="1823" y="0" width="574" height="776"/>
+	<SubTexture name="Senko Down Miss0001" x="2397" y="0" width="574" height="776"/>
+	<SubTexture name="Senko Down Miss0002" x="2397" y="0" width="574" height="776"/>
+	<SubTexture name="Senko Down Miss0003" x="2971" y="0" width="574" height="772" frameX="0" frameY="-4" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Down Miss0004" x="2971" y="0" width="574" height="772" frameX="0" frameY="-4" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Idle0000" x="0" y="814" width="767" height="1221" frameX="-6" frameY="-50" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0001" x="0" y="814" width="767" height="1221" frameX="-6" frameY="-50" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0002" x="767" y="814" width="728" height="978" frameX="0" frameY="0" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0003" x="767" y="814" width="728" height="978" frameX="0" frameY="0" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0004" x="1495" y="814" width="647" height="885" frameX="-47" frameY="-48" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0005" x="1495" y="814" width="647" height="885" frameX="-47" frameY="-48" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0006" x="2142" y="814" width="613" height="841" frameX="-73" frameY="-80" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0007" x="2142" y="814" width="613" height="841" frameX="-73" frameY="-80" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0008" x="2755" y="814" width="612" height="836" frameX="-75" frameY="-89" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0009" x="2755" y="814" width="612" height="836" frameX="-75" frameY="-89" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0010" x="3367" y="814" width="602" height="797" frameX="-75" frameY="-123" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0011" x="3367" y="814" width="602" height="797" frameX="-75" frameY="-123" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0012" x="3367" y="814" width="602" height="797" frameX="-75" frameY="-123" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Idle0013" x="3367" y="814" width="602" height="797" frameX="-75" frameY="-123" frameWidth="773" frameHeight="1271"/>
+	<SubTexture name="Senko Left0000" x="0" y="2035" width="589" height="787" frameX="-16" frameY="-12" frameWidth="622" frameHeight="810"/>
+	<SubTexture name="Senko Left0001" x="0" y="2035" width="589" height="787" frameX="-16" frameY="-12" frameWidth="622" frameHeight="810"/>
+	<SubTexture name="Senko Left0002" x="589" y="2035" width="606" height="804" frameX="-9" frameY="-3" frameWidth="622" frameHeight="810"/>
+	<SubTexture name="Senko Left0003" x="589" y="2035" width="606" height="804" frameX="-9" frameY="-3" frameWidth="622" frameHeight="810"/>
+	<SubTexture name="Senko Left0004" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0005" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0006" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0007" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0008" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0009" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0010" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0011" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0012" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left0013" x="1195" y="2035" width="622" height="810"/>
+	<SubTexture name="Senko Left Miss0000" x="1817" y="2035" width="574" height="776"/>
+	<SubTexture name="Senko Left Miss0001" x="2391" y="2035" width="574" height="776"/>
+	<SubTexture name="Senko Left Miss0002" x="2391" y="2035" width="574" height="776"/>
+	<SubTexture name="Senko Left Miss0003" x="2965" y="2035" width="574" height="772" frameX="0" frameY="-4" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Left Miss0004" x="2965" y="2035" width="574" height="772" frameX="0" frameY="-4" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Right0000" x="0" y="2845" width="581" height="780" frameX="-14" frameY="-10" frameWidth="610" frameHeight="800"/>
+	<SubTexture name="Senko Right0001" x="0" y="2845" width="581" height="780" frameX="-14" frameY="-10" frameWidth="610" frameHeight="800"/>
+	<SubTexture name="Senko Right0002" x="581" y="2845" width="606" height="798" frameX="-2" frameY="-1" frameWidth="610" frameHeight="800"/>
+	<SubTexture name="Senko Right0003" x="581" y="2845" width="606" height="798" frameX="-2" frameY="-1" frameWidth="610" frameHeight="800"/>
+	<SubTexture name="Senko Right0004" x="1187" y="2845" width="610" height="800"/>
+	<SubTexture name="Senko Right0005" x="1187" y="2845" width="610" height="800"/>
+	<SubTexture name="Senko Right Miss0000" x="1797" y="2845" width="574" height="776"/>
+	<SubTexture name="Senko Right Miss0001" x="2371" y="2845" width="574" height="776"/>
+	<SubTexture name="Senko Right Miss0002" x="2371" y="2845" width="574" height="776"/>
+	<SubTexture name="Senko Right Miss0003" x="2945" y="2845" width="574" height="773" frameX="0" frameY="-3" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Right Miss0004" x="2945" y="2845" width="574" height="773" frameX="0" frameY="-3" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Up0000" x="0" y="3645" width="578" height="782" frameX="-10" frameY="-5" frameWidth="599" frameHeight="794"/>
+	<SubTexture name="Senko Up0001" x="0" y="3645" width="578" height="782" frameX="-10" frameY="-5" frameWidth="599" frameHeight="794"/>
+	<SubTexture name="Senko Up0002" x="578" y="3645" width="594" height="790" frameX="-3" frameY="-2" frameWidth="599" frameHeight="794"/>
+	<SubTexture name="Senko Up0003" x="578" y="3645" width="594" height="790" frameX="-3" frameY="-2" frameWidth="599" frameHeight="794"/>
+	<SubTexture name="Senko Up0004" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0005" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0006" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0007" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0008" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0009" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0010" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0011" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0012" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up0013" x="1172" y="3645" width="599" height="794"/>
+	<SubTexture name="Senko Up Miss0000" x="1771" y="3645" width="574" height="776"/>
+	<SubTexture name="Senko Up Miss0001" x="2345" y="3645" width="574" height="776"/>
+	<SubTexture name="Senko Up Miss0002" x="2345" y="3645" width="574" height="776"/>
+	<SubTexture name="Senko Up Miss0003" x="2919" y="3645" width="574" height="770" frameX="0" frameY="-6" frameWidth="574" frameHeight="776"/>
+	<SubTexture name="Senko Up Miss0004" x="2919" y="3645" width="574" height="770" frameX="0" frameY="-6" frameWidth="574" frameHeight="776"/>
+</TextureAtlas>

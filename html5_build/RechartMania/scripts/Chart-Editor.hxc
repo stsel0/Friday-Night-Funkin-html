@@ -1,0 +1,58 @@
+import funkin.modding.module.Module;
+import funkin.modding.events.ScriptEvent;
+import funkin.Preferences;
+import flixel.FlxG;
+import funkin.ui.options.OptionsState;
+import flixel.FlxSprite;
+import funkin.ui.debug.charting.ChartEditorState;
+
+class DebugMenuOptions extends Module {
+
+    var preferences;
+
+    function new(){
+        super("DebugMenuOptions");
+    }
+
+    public function onStateChangeEnd(event:StateChangeScriptEvent) {
+        if(Std.isOfType(event.targetState, OptionsState)) {
+            preferences = event.targetState.optionsCodex.pages.get("preferences");
+            
+            if (preferences != null) {
+                // Add the chart editor button
+                preferences.createPrefItemCheckbox('Open Chart Editor', 'Opens the chart editor to create and edit songs', 
+                    function(value:Bool):Void {
+                        // Store that we want to return to preferences after chart editor closes
+                        FlxG.save.data.returnToPreferences = true;
+                        FlxG.save.flush();
+                        
+                        // Switch to the Chart Editor state
+                        FlxG.switchState(() -> new ChartEditorState());
+                    }, false);
+            }
+        }
+        
+        // Handle returning to preferences after debug menu closes
+        if (FlxG.save.data.returnToPreferences != null && FlxG.save.data.returnToPreferences == true) {
+            FlxG.save.data.returnToPreferences = false;
+            FlxG.save.flush();
+            
+            try {
+                if (Std.isOfType(FlxG.state, OptionsState)) {
+                    var optionsState:OptionsState = cast(FlxG.state, OptionsState);
+                    if (optionsState.optionsCodex != null) {
+                        optionsState.optionsCodex.setPage("preferences");
+                    }
+                }
+            } catch (e:Dynamic) {
+                // Silently handle any errors hopefully lol, sorry i like to log my code
+            }
+        }
+    }
+    
+    private function createPrefSeparator(text:String):Void {
+        preferences.items.createItem(0, (120 * preferences.items.length) + 30, text, "BOLD", function(){}, true);
+        preferences.preferenceItems.add(new FlxSprite().makeGraphic(0, 0, 0x00000000));
+        preferences.preferenceDesc.push("");
+    }
+}

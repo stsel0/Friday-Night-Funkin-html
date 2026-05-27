@@ -1,0 +1,41 @@
+import funkin.play.PlayState;
+import funkin.modding.module.Module;
+import flixel.FlxSprite;
+import flixel.FlxG;
+
+class CamMovementModule extends Module {
+    
+    // CAMBIO CLAVE: Variable estática para comunicación directa.
+    public static var noteOffset:Float = 20;
+
+	public function new() {
+		// El nombre de la clase es ahora CamMovementModule
+		super("Camera Movement Module for Trinity");
+    }
+
+	override function onNoteHit(event) {
+    	super.onNoteHit(event);
+
+		if (PlayState.instance == null) return;
+        // Solo aplica en la canción "trinity"
+        if (PlayState.instance.currentSong.id != "trinity") return;
+        if (FlxG.camera.target == null) return;
+        
+		FlxG.camera.targetOffset.set(0,0);
+		
+        // Usamos la variable estática CamMovementModule.noteOffset
+		switch(event.note.direction)
+		{
+			case 0: // Izquierda
+				FlxG.camera.targetOffset.x = -CamMovementModule.noteOffset;
+			case 1: // Abajo
+				FlxG.camera.targetOffset.y = CamMovementModule.noteOffset;
+			case 2: // Arriba
+				FlxG.camera.targetOffset.y = -CamMovementModule.noteOffset;
+			case 3: // Derecha
+				FlxG.camera.targetOffset.x = CamMovementModule.noteOffset;
+		}
+  	}
+    
+    // No hay onSongEvent, la comunicación es directa.
+}
